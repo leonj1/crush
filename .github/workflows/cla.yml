@@ -15,7 +15,7 @@ permissions:
 jobs:
   CLAAssistant:
     if: github.repository == 'charmbracelet/crush'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     steps:
       - name: "CLA Assistant"
         if: |
